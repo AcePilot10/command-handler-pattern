@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using dev.Core.Commands;
+using dev.Core.Sql;
 
 namespace CodyCustomAccount
 {
@@ -31,6 +34,8 @@ namespace CodyCustomAccount
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddScoped<Handler>();
+            services.AddScoped<SqlQuery>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

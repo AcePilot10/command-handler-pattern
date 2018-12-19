@@ -1,4 +1,5 @@
 ﻿using CodyCustomAccount.Models;
+using dev.Core.Commands;
 using dev.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CodyCustomAccount.Validation
 {
-    public class PasswordHasEnoughCharacters
+    public class PasswordHasEnoughCharacters : IValidation
     {
         public bool IsValid(List<IModel> data)
         {
