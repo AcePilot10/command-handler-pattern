@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.WebApi2" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
@@ -16,6 +18,12 @@
     <ProjectReference Include="..\dev.Console\dev.Console.csproj" />
     <ProjectReference Include="..\dev.Core\dev.Core.csproj" />
     <ProjectReference Include="..\dev.Entities\dev.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Configuration.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

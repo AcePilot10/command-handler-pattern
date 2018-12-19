@@ -60,7 +60,7 @@ namespace dev.Api
 
             CompositionRoot.Wire(container);
 
-            ConfigureAuth(app);
+            //ConfigureAuth(app);
 
             var config = new HttpConfiguration();
 

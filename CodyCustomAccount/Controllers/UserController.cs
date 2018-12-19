@@ -37,5 +37,11 @@ namespace CodyCustomAccount.Controllers
                 .Command<SaveUser>()
                 .Invoke();
         }
+
+        [HttpGet("test")]
+        public IActionResult test()
+        {
+            return Content("Test Worked");
+        }
     }
 }

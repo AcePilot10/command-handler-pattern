@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "f0e0a6e609ee59eb3f582a63aee4db96b9e05360"
+    "signature": "f33599c68b347ed14c5df4549518df8dc620bb7b"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,8 @@
       "CodyCustomAccount/1.0.0": {
         "dependencies": {
           "Autofac": "4.8.1",
+          "Autofac.WebApi2": "4.2.0",
+          "Microsoft.AspNet.Identity.Owin": "2.2.2",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
@@ -54,6 +56,63 @@
         },
         "compile": {
           "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.WebApi2/4.2.0": {
+        "dependencies": {
+          "Autofac": "4.8.1",
+          "Microsoft.AspNet.WebApi.Core": "5.2.0"
+        },
+        "runtime": {
+          "lib/net45/Autofac.Integration.WebApi.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.258"
+          }
+        },
+        "compile": {
+          "lib/net45/Autofac.Integration.WebApi.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.2": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/2.2.2": {
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.2",
+          "Microsoft.Owin.Security": "3.0.1",
+          "Microsoft.Owin.Security.Cookies": "3.0.1",
+          "Microsoft.Owin.Security.OAuth": "3.0.1"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.0": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.6"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.20627.0"
+          }
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -257,6 +316,68 @@
       },
       "Microsoft.NETCore.Platforms/2.1.0": {},
       "Microsoft.NETCore.Targets/2.1.0": {},
+      "Microsoft.Owin/3.0.1": {
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/3.0.1": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.1",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/3.0.1": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.1",
+          "Microsoft.Owin.Security": "3.0.1",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/3.0.1": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.1",
+          "Microsoft.Owin.Security": "3.0.1",
+          "Newtonsoft.Json": "11.0.2",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
@@ -394,6 +515,17 @@
         },
         "compile": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Owin.dll": {}
         }
       },
       "System.ComponentModel/4.0.1": {
@@ -543,12 +675,8 @@
           "dev.Business": "1.0.0",
           "dev.Core": "1.0.0",
           "dev.Entities": "1.0.0",
-          "Microsoft.Owin": "3.1.0.0",
           "System.Web.Mvc": "5.2.3.0",
-          "System.Web.Http": "5.2.3.0",
-          "Owin": "1.0.0.0",
           "System.Web.Http.Owin": "5.2.3.0",
-          "Autofac.Integration.WebApi": "4.1.0.0",
           "Microsoft.Owin.Cors": "3.1.0.0",
           "System.Web.Http.WebHost": "5.2.3.0",
           "System.Web.Razor": "3.0.0.0",
@@ -613,14 +741,6 @@
           "dev.Entities.dll": {}
         }
       },
-      "Microsoft.Owin.Reference/3.1.0.0": {
-        "runtime": {
-          "Microsoft.Owin.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.60405.82"
-          }
-        }
-      },
       "System.Web.Mvc.Reference/5.2.3.0": {
         "runtime": {
           "System.Web.Mvc.dll": {
@@ -629,35 +749,11 @@
           }
         }
       },
-      "System.Web.Http.Reference/5.2.3.0": {
-        "runtime": {
-          "System.Web.Http.dll": {
-            "assemblyVersion": "5.2.3.0",
-            "fileVersion": "5.2.30128.0"
-          }
-        }
-      },
-      "Owin.Reference/1.0.0.0": {
-        "runtime": {
-          "Owin.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "System.Web.Http.Owin.Reference/5.2.3.0": {
         "runtime": {
           "System.Web.Http.Owin.dll": {
             "assemblyVersion": "5.2.3.0",
             "fileVersion": "5.2.30128.0"
-          }
-        }
-      },
-      "Autofac.Integration.WebApi.Reference/4.1.0.0": {
-        "runtime": {
-          "Autofac.Integration.WebApi.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "4.1.0.245"
           }
         }
       },
@@ -3715,6 +3811,34 @@
       "path": "autofac/4.8.1",
       "hashPath": "autofac.4.8.1.nupkg.sha512"
     },
+    "Autofac.WebApi2/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ggpkB3mvCHJDZaQFkTAHVhHRkgoCSZvcAq4p/hnnyKqVYXnFl7o1R2wZScbEiVHK+nikmPyfVL7zRpL9hW7AQQ==",
+      "path": "autofac.webapi2/4.2.0",
+      "hashPath": "autofac.webapi2.4.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DJNnLn/eElAudZqNUsQ8qQy3LlKnlQ/kBjl+Zi6Xvur/InJ6DZYCuTLV5mtNtDZ0egvpl/e/Q8MLlh+3te7tYw==",
+      "path": "microsoft.aspnet.identity.core/2.2.2",
+      "hashPath": "microsoft.aspnet.identity.core.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.Owin/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3hRTfCtU0PTkqFSMpBLVHj2AiPiljzLcLxZLn9QdCInf+0mIuB+w2roSp8KvLeL/CG9kuS9qvm/5+1k5crcazA==",
+      "path": "microsoft.aspnet.identity.owin/2.2.2",
+      "hashPath": "microsoft.aspnet.identity.owin.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FQIGqfEKJEycZrvtUhiChmg2F9eKQTPgMBXfowSsS2ztmRY8Fzgi+TLpOZ6E1yVUMOjYwazYenVkyF7wLERCcA==",
+      "path": "microsoft.aspnet.webapi.core/5.2.0",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.0.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -3770,6 +3894,34 @@
       "sha512": "sha512-etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
       "path": "microsoft.netcore.targets/2.1.0",
       "hashPath": "microsoft.netcore.targets.2.1.0.nupkg.sha512"
+    },
+    "Microsoft.Owin/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CgFYwpkjpMxQsf3gjIEjOmm1Rl1v16m7YcNAAMeZtE4Ec0uxqTEyHlxP+Emmk/vIiDk2PQZHvLws2C+b/bNuMQ==",
+      "path": "microsoft.owin/3.0.1",
+      "hashPath": "microsoft.owin.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O0EHeebb9TP/k3ChIu/1bKwTekMWVtnwY+khWvTBX5/YngwiWL4YfENsj4mmNciqhZQtuDro0vc7kt3GcuR6Xw==",
+      "path": "microsoft.owin.security/3.0.1",
+      "hashPath": "microsoft.owin.security.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security.Cookies/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LPo6jCYi1FppzOoOvR/YuHNdK7EHZiz/GJtpdw6GNxHuYLetXyWEs356R1lndKf8gca4x1v1mQrCaqQJippA9w==",
+      "path": "microsoft.owin.security.cookies/3.0.1",
+      "hashPath": "microsoft.owin.security.cookies.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security.OAuth/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g3fPi4kF/XGmPthZIZ2LJC8B//OEvv0rvOMnBZUjVY6W6/Efmn5EHVkqtgF9yu9y6CHVRAqmG7p3KMB8j25nNg==",
+      "path": "microsoft.owin.security.oauth/3.0.1",
+      "hashPath": "microsoft.owin.security.oauth.3.0.1.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
       "type": "package",
@@ -3840,6 +3992,13 @@
       "sha512": "sha512-/VaEPsEgj3p5YPLLxbYc6rB8gYIPf+8wCWOAlAe3l/SP0DXcefZ58uJer1ToBKIpwbPN5LkgTXtvilze5UJoYQ==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S87+AKxSxfhXRzIQfm6WBxfGbnzECLG8bmVp3lRiwjeYG9YBJ0AXd+2Xn7I7aqwwj0j4erSpX6H9OhXy+qQ7tw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "System.ComponentModel/4.0.1": {
       "type": "package",
@@ -3922,32 +4081,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Owin.Reference/3.1.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Web.Mvc.Reference/5.2.3.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "System.Web.Http.Reference/5.2.3.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Owin.Reference/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Web.Http.Owin.Reference/5.2.3.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Autofac.Integration.WebApi.Reference/4.1.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
