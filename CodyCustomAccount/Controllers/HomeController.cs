@@ -33,7 +33,7 @@ namespace CodyCustomAccount.Controllers
             return View();
         }
 
-        public IResult test()
+        public IResult Test()
         {
             var result =  _handler.Command<GetUsers>().Invoke();
             return result;

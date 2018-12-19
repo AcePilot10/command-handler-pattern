@@ -15,6 +15,19 @@
           "lib/netstandard1.1/Autofac.dll": {}
         }
       },
+      "Autofac.Extensions.DependencyInjection/4.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.6.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "Autofac.WebApi2/4.2.0": {
         "type": "package",
         "dependencies": {
@@ -4830,6 +4843,22 @@
         "lib/net45/Autofac.xml",
         "lib/netstandard1.1/Autofac.dll",
         "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/4.3.1": {
+      "sha512": "vWa3PzmRA7m+Az5oqfu7tKDdMnS8wkVvYX04640y177gBWrP74gEzJ9rbqtRzVO0IPAxHAKvHS6LBSaDR66u8Q==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/4.3.1",
+      "files": [
+        ".signature.p7s",
+        "autofac.extensions.dependencyinjection.4.3.1.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
     "Autofac.WebApi2/4.2.0": {
@@ -12617,6 +12646,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Autofac >= 4.8.1",
+      "Autofac.Extensions.DependencyInjection >= 4.3.1",
       "Autofac.WebApi2 >= 4.2.0",
       "Microsoft.AspNet.Identity.Owin >= 2.2.2",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -12636,11 +12666,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
+      "projectUniqueName": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
       "projectName": "CodyCustomAccount",
-      "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
+      "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
       "packagesPath": "C:\\Users\\codyj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\CodyCustomAccount\\obj\\",
+      "outputPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\CodyCustomAccount\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12659,20 +12689,20 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.API\\dev.Api.csproj": {
-              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.API\\dev.Api.csproj"
+            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.API\\dev.Api.csproj": {
+              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.API\\dev.Api.csproj"
             },
-            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Business\\dev.Business.csproj": {
-              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Business\\dev.Business.csproj"
+            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Business\\dev.Business.csproj": {
+              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Business\\dev.Business.csproj"
             },
-            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Console\\dev.Console.csproj": {
-              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Console\\dev.Console.csproj"
+            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Console\\dev.Console.csproj": {
+              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Console\\dev.Console.csproj"
             },
-            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Core\\dev.Core.csproj": {
-              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Core\\dev.Core.csproj"
+            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Core\\dev.Core.csproj": {
+              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Core\\dev.Core.csproj"
             },
-            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Entities\\dev.Entities.csproj": {
-              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Entities\\dev.Entities.csproj"
+            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Entities\\dev.Entities.csproj": {
+              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Entities\\dev.Entities.csproj"
             }
           }
         }
@@ -12689,6 +12719,10 @@
           "Autofac": {
             "target": "Package",
             "version": "[4.8.1, )"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[4.3.1, )"
           },
           "Autofac.WebApi2": {
             "target": "Package",

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Autofac.Integration.WebApi;
 using dev.Core.Commands;
 using dev.Core.IoC;
@@ -29,16 +30,53 @@ namespace CodyCustomAccount
         {
             Configuration = configuration;
         }
-        
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+        public IServiceProvider ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc();
+            var provider = ConfigureAutofac(services);
+            return provider;
+        }
+
+        private IServiceProvider ConfigureAutofac(IServiceCollection services)
+        {
+            var builder = new ContainerBuilder();
+
+            builder.Populate(services);
+
+            builder.RegisterType<Handler>().As<IHandler>();
+            builder.RegisterType<SqlQuery>().As<IQuery>();
+            builder.RegisterType<NLog>().As<ILog>();
+
+            //Register all validators -- singletons
+            builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
+                   .Where(t => t.IsAssignableTo<IValidation>())
+                   .Named<IValidation>(t => t.Name)
+                   .AsImplementedInterfaces()
+                   .SingleInstance();
+
+            //Register all commands -- singletons
+            builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
+                   .Where(t => t.IsAssignableTo<ICommand>())
+                   .Named<ICommand>(t => t.Name)
+                   .AsImplementedInterfaces()
+                   .SingleInstance();
+
+            // Register your Web API controllers.
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+
+            // OPTIONAL: Register the Autofac filter provider.
+            //builder.RegisterWebApiFilterProvider(config);
+
+            // OPTIONAL: Register the Autofac model binder provider.
+            //builder.RegisterWebApiModelBinderProvider();
+
+            // Set the dependency resolver to be Autofac.
+            var container = builder.Build();
+
+            CompositionRoot.Wire(container);
+
+            return container.Resolve<IServiceProvider>();
         }
         
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

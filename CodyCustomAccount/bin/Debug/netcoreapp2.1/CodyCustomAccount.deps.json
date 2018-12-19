@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "f33599c68b347ed14c5df4549518df8dc620bb7b"
+    "signature": "1a4f74496ee6362304207a591f4cf2df9152faa9"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,7 @@
       "CodyCustomAccount/1.0.0": {
         "dependencies": {
           "Autofac": "4.8.1",
+          "Autofac.Extensions.DependencyInjection": "4.3.1",
           "Autofac.WebApi2": "4.2.0",
           "Microsoft.AspNet.Identity.Owin": "2.2.2",
           "Microsoft.AspNetCore.App": "2.1.1",
@@ -56,6 +57,21 @@
         },
         "compile": {
           "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/4.3.1": {
+        "dependencies": {
+          "Autofac": "4.8.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "4.3.1.0",
+            "fileVersion": "4.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
       "Autofac.WebApi2/4.2.0": {
@@ -3810,6 +3826,13 @@
       "sha512": "sha512-GYRLxd2wCzhvee2u1vs3AbUbF4CHDWfD7BCNjD3Vxb4wxQz3HC8bPm9Sj9uOT0gE8a6PC2fx1zufmhLgxK+cZg==",
       "path": "autofac/4.8.1",
       "hashPath": "autofac.4.8.1.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vWa3PzmRA7m+Az5oqfu7tKDdMnS8wkVvYX04640y177gBWrP74gEzJ9rbqtRzVO0IPAxHAKvHS6LBSaDR66u8Q==",
+      "path": "autofac.extensions.dependencyinjection/4.3.1",
+      "hashPath": "autofac.extensions.dependencyinjection.4.3.1.nupkg.sha512"
     },
     "Autofac.WebApi2/4.2.0": {
       "type": "package",

@@ -35,12 +35,8 @@ D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\net
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Console.exe
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Core.dll
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Entities.dll
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.dll
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Mvc.dll
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.dll
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Owin.dll
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.Owin.dll
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Autofac.Integration.WebApi.dll
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.Cors.dll
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.WebHost.dll
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\DapperExtensions.dll
@@ -61,11 +57,8 @@ D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\net
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Core.dll.config
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Entities.pdb
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Entities.dll.config
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.xml
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Mvc.xml
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.xml
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.Owin.xml
-D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Autofac.Integration.WebApi.xml
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.Cors.xml
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.WebHost.xml
 D:\Documents\MSDN Projects\CommandHandlerPattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\DapperExtensions.pdb
