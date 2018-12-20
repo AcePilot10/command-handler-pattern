@@ -78,7 +78,6 @@ C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCusto
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\CodyCustomAccount.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\CodyCustomAccount.pdb
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\CodyCustomAccount.Views.dll
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\CodyCustomAccount.Views.pdb
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Api.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Business.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\dev.Console.exe
@@ -122,22 +121,7 @@ C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCusto
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.RazorAssemblyInfo.cs
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.AssemblyInfoInputs.cache
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.AssemblyInfo.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.TagHelpers.input.cache
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.TagHelpers.output.cache
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.RazorCoreGenerate.cache
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.RazorTargetAssemblyInfo.cache
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.RazorTargetAssemblyInfo.cs
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.Views.pdb
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.csproj.CopyComplete
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.pdb
@@ -146,3 +130,6 @@ C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCusto
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.Cors.xml
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.Properties.Resources.resources
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.csproj.GenerateResource.cache
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.dll
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Owin.dll
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.xml
