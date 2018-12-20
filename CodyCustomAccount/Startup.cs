@@ -13,8 +13,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Owin;
-using Owin;
 using System;
 using System.Reflection;
 using System.Web.Http;
@@ -38,15 +36,16 @@ namespace CodyCustomAccount
             return provider;
         }
 
+        //Here we setup Autofac and use it for dependency injection rather than Microsoft's built in DI services.
         private IServiceProvider ConfigureAutofac(IServiceCollection services)
         {
             var builder = new ContainerBuilder();
 
             builder.Populate(services);
 
+            builder.RegisterType<dev.Core.Logger.NLog>().As<ILog>();
             builder.RegisterType<Handler>().As<IHandler>();
             builder.RegisterType<SqlQuery>().As<IQuery>();
-            builder.RegisterType<NLog>().As<ILog>();
 
             //Register all validators -- singletons
             builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
@@ -95,12 +94,7 @@ namespace CodyCustomAccount
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc();
         }
     }
 }

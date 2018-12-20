@@ -41,30 +41,6 @@
           "lib/net45/Autofac.Integration.WebApi.dll": {}
         }
       },
-      "Microsoft.AspNet.Identity.Core/2.2.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Identity.Owin/2.2.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNet.Identity.Core": "2.2.2",
-          "Microsoft.Owin.Security": "3.0.1",
-          "Microsoft.Owin.Security.Cookies": "3.0.1",
-          "Microsoft.Owin.Security.OAuth": "3.0.1"
-        },
-        "compile": {
-          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
-        }
-      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -2684,60 +2660,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Owin/3.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Owin": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Owin.dll": {}
-        }
-      },
-      "Microsoft.Owin.Security/3.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Owin": "3.0.1",
-          "Owin": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.Security.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Owin.Security.dll": {}
-        }
-      },
-      "Microsoft.Owin.Security.Cookies/3.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Owin": "3.0.1",
-          "Microsoft.Owin.Security": "3.0.1",
-          "Owin": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
-        }
-      },
-      "Microsoft.Owin.Security.OAuth/3.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Owin": "3.0.1",
-          "Microsoft.Owin.Security": "3.0.1",
-          "Newtonsoft.Json": "6.0.4",
-          "Owin": "1.0.0"
-        },
-        "compile": {
-          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
-        }
-      },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -2902,6 +2824,15 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "NLog/4.5.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -2912,15 +2843,6 @@
         },
         "runtime": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
-        }
-      },
-      "Owin/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/Owin.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Owin.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -4872,30 +4794,6 @@
         "lib/net45/Autofac.Integration.WebApi.dll",
         "lib/net45/Autofac.Integration.WebApi.pdb",
         "lib/net45/Autofac.Integration.WebApi.xml"
-      ]
-    },
-    "Microsoft.AspNet.Identity.Core/2.2.2": {
-      "sha512": "DJNnLn/eElAudZqNUsQ8qQy3LlKnlQ/kBjl+Zi6Xvur/InJ6DZYCuTLV5mtNtDZ0egvpl/e/Q8MLlh+3te7tYw==",
-      "type": "package",
-      "path": "microsoft.aspnet.identity.core/2.2.2",
-      "files": [
-        ".signature.p7s",
-        "lib/net45/Microsoft.AspNet.Identity.Core.dll",
-        "lib/net45/Microsoft.AspNet.Identity.Core.xml",
-        "microsoft.aspnet.identity.core.2.2.2.nupkg.sha512",
-        "microsoft.aspnet.identity.core.nuspec"
-      ]
-    },
-    "Microsoft.AspNet.Identity.Owin/2.2.2": {
-      "sha512": "3hRTfCtU0PTkqFSMpBLVHj2AiPiljzLcLxZLn9QdCInf+0mIuB+w2roSp8KvLeL/CG9kuS9qvm/5+1k5crcazA==",
-      "type": "package",
-      "path": "microsoft.aspnet.identity.owin/2.2.2",
-      "files": [
-        ".signature.p7s",
-        "lib/net45/Microsoft.AspNet.Identity.Owin.dll",
-        "lib/net45/Microsoft.AspNet.Identity.Owin.xml",
-        "microsoft.aspnet.identity.owin.2.2.2.nupkg.sha512",
-        "microsoft.aspnet.identity.owin.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -7334,54 +7232,6 @@
         "version.txt"
       ]
     },
-    "Microsoft.Owin/3.0.1": {
-      "sha512": "CgFYwpkjpMxQsf3gjIEjOmm1Rl1v16m7YcNAAMeZtE4Ec0uxqTEyHlxP+Emmk/vIiDk2PQZHvLws2C+b/bNuMQ==",
-      "type": "package",
-      "path": "microsoft.owin/3.0.1",
-      "files": [
-        ".signature.p7s",
-        "lib/net45/Microsoft.Owin.XML",
-        "lib/net45/Microsoft.Owin.dll",
-        "microsoft.owin.3.0.1.nupkg.sha512",
-        "microsoft.owin.nuspec"
-      ]
-    },
-    "Microsoft.Owin.Security/3.0.1": {
-      "sha512": "O0EHeebb9TP/k3ChIu/1bKwTekMWVtnwY+khWvTBX5/YngwiWL4YfENsj4mmNciqhZQtuDro0vc7kt3GcuR6Xw==",
-      "type": "package",
-      "path": "microsoft.owin.security/3.0.1",
-      "files": [
-        ".signature.p7s",
-        "lib/net45/Microsoft.Owin.Security.XML",
-        "lib/net45/Microsoft.Owin.Security.dll",
-        "microsoft.owin.security.3.0.1.nupkg.sha512",
-        "microsoft.owin.security.nuspec"
-      ]
-    },
-    "Microsoft.Owin.Security.Cookies/3.0.1": {
-      "sha512": "LPo6jCYi1FppzOoOvR/YuHNdK7EHZiz/GJtpdw6GNxHuYLetXyWEs356R1lndKf8gca4x1v1mQrCaqQJippA9w==",
-      "type": "package",
-      "path": "microsoft.owin.security.cookies/3.0.1",
-      "files": [
-        ".signature.p7s",
-        "lib/net45/Microsoft.Owin.Security.Cookies.dll",
-        "lib/net45/Microsoft.Owin.Security.Cookies.xml",
-        "microsoft.owin.security.cookies.3.0.1.nupkg.sha512",
-        "microsoft.owin.security.cookies.nuspec"
-      ]
-    },
-    "Microsoft.Owin.Security.OAuth/3.0.1": {
-      "sha512": "g3fPi4kF/XGmPthZIZ2LJC8B//OEvv0rvOMnBZUjVY6W6/Efmn5EHVkqtgF9yu9y6CHVRAqmG7p3KMB8j25nNg==",
-      "type": "package",
-      "path": "microsoft.owin.security.oauth/3.0.1",
-      "files": [
-        ".signature.p7s",
-        "lib/net45/Microsoft.Owin.Security.OAuth.XML",
-        "lib/net45/Microsoft.Owin.Security.OAuth.dll",
-        "microsoft.owin.security.oauth.3.0.1.nupkg.sha512",
-        "microsoft.owin.security.oauth.nuspec"
-      ]
-    },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
       "sha512": "EJkd4EOM2FrT1qWo5Z/LsmTxmiZBC6reETLAXnF6CG/c1IeZqRP/PY6PuyOz67LS5McOJ706egnLktJ23XVvEQ==",
       "type": "package",
@@ -7845,6 +7695,38 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
+    "NLog/4.5.11": {
+      "sha512": "7TI+dYvEIOcCN6fjr3yjMN5AtPBSbHNxKGmn/5rkqbBk81MGsnQBkParoGOidibDIe3dwThJJndxl7O3zmd3rA==",
+      "type": "package",
+      "path": "nlog/4.5.11",
+      "files": [
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.5.11.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
     "NuGet.Frameworks/4.7.0": {
       "sha512": "/VaEPsEgj3p5YPLLxbYc6rB8gYIPf+8wCWOAlAe3l/SP0DXcefZ58uJer1ToBKIpwbPN5LkgTXtvilze5UJoYQ==",
       "type": "package",
@@ -7859,17 +7741,6 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
-      ]
-    },
-    "Owin/1.0.0": {
-      "sha512": "S87+AKxSxfhXRzIQfm6WBxfGbnzECLG8bmVp3lRiwjeYG9YBJ0AXd+2Xn7I7aqwwj0j4erSpX6H9OhXy+qQ7tw==",
-      "type": "package",
-      "path": "owin/1.0.0",
-      "files": [
-        ".signature.p7s",
-        "lib/net40/Owin.dll",
-        "owin.1.0.0.nupkg.sha512",
-        "owin.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -12648,10 +12519,10 @@
       "Autofac >= 4.8.1",
       "Autofac.Extensions.DependencyInjection >= 4.3.1",
       "Autofac.WebApi2 >= 4.2.0",
-      "Microsoft.AspNet.Identity.Owin >= 2.2.2",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "NLog >= 4.5.11",
       "dev.Api >= 1.0.0",
       "dev.Business >= 1.0.0",
       "dev.Console >= 1.0.0",
@@ -12666,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
+      "projectUniqueName": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
       "projectName": "CodyCustomAccount",
-      "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
+      "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\CodyCustomAccount\\CodyCustomAccount.csproj",
       "packagesPath": "C:\\Users\\codyj\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\CodyCustomAccount\\obj\\",
+      "outputPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\CodyCustomAccount\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12689,20 +12560,20 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.API\\dev.Api.csproj": {
-              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.API\\dev.Api.csproj"
+            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.API\\dev.Api.csproj": {
+              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.API\\dev.Api.csproj"
             },
-            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Business\\dev.Business.csproj": {
-              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Business\\dev.Business.csproj"
+            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Business\\dev.Business.csproj": {
+              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Business\\dev.Business.csproj"
             },
-            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Console\\dev.Console.csproj": {
-              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Console\\dev.Console.csproj"
+            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Console\\dev.Console.csproj": {
+              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Console\\dev.Console.csproj"
             },
-            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Core\\dev.Core.csproj": {
-              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Core\\dev.Core.csproj"
+            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Core\\dev.Core.csproj": {
+              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Core\\dev.Core.csproj"
             },
-            "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Entities\\dev.Entities.csproj": {
-              "projectPath": "D:\\Documents\\MSDN Projects\\CommandHandlerPattern\\dev.Entities\\dev.Entities.csproj"
+            "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Entities\\dev.Entities.csproj": {
+              "projectPath": "C:\\Users\\codyj\\Documents\\MSDN Projects\\ASP.NET\\command-handler-pattern\\dev.Entities\\dev.Entities.csproj"
             }
           }
         }
@@ -12728,10 +12599,6 @@
             "target": "Package",
             "version": "[4.2.0, )"
           },
-          "Microsoft.AspNet.Identity.Owin": {
-            "target": "Package",
-            "version": "[2.2.2, )"
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12746,6 +12613,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[4.5.11, )"
           }
         },
         "imports": [
@@ -12771,78 +12642,8 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Identity.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Owin 2.2.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.AspNet.Identity.Owin",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
       "message": "Package 'Microsoft.AspNet.WebApi.Core 5.2.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin 3.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security 3.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin.Security",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security.Cookies 3.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin.Security.Cookies",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Owin.Security.OAuth 3.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Microsoft.Owin.Security.OAuth",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Owin 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Owin",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

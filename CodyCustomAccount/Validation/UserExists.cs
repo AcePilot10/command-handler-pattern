@@ -27,6 +27,14 @@ namespace CodyCustomAccount.Validation
                 return false;
             }
 
+            foreach(var user in models)
+            {
+                string username = user.Username;
+                if (!_query.Exist<UserData>("select * from Users where Username = @Username", new { Username = username }))
+                {
+                    return false;
+                }
+            }
             return true;
         }
 

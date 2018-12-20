@@ -12,7 +12,7 @@ namespace CodyCustomAccount.Models
         [Key]
         public int _ID { get; set; }
 
-        public Guid Uuid { get; set; }
+        public string Guid { get; set; }
         public string Username { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

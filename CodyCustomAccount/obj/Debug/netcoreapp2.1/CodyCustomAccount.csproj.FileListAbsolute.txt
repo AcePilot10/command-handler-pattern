@@ -88,7 +88,6 @@ C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCusto
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.Owin.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.WebHost.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\DapperExtensions.dll
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\NLog.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Quartz.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Dapper.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Razor.dll
@@ -110,7 +109,6 @@ C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCusto
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.Owin.xml
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Http.WebHost.xml
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\DapperExtensions.pdb
-C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\NLog.xml
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Quartz.pdb
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Quartz.xml
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Dapper.xml
@@ -143,3 +141,8 @@ C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCusto
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.csproj.CopyComplete
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.dll
 C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.pdb
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.Cors.dll
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\System.Web.Cors.dll
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\bin\Debug\netcoreapp2.1\Microsoft.Owin.Cors.xml
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.Properties.Resources.resources
+C:\Users\codyj\Documents\MSDN Projects\ASP.NET\command-handler-pattern\CodyCustomAccount\obj\Debug\netcoreapp2.1\CodyCustomAccount.csproj.GenerateResource.cache

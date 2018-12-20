@@ -15,7 +15,7 @@ namespace CodyCustomAccount.Commands
             var users = data.DataGet<UserData>();
 
             foreach (var user in users)
-                user.Uuid = System.Guid.NewGuid();
+                user.Guid = Guid.NewGuid().ToString();
         }
     }
 }

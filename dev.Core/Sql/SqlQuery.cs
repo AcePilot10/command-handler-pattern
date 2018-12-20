@@ -12,6 +12,8 @@ namespace dev.Core.Sql
 {
     public class SqlQuery : IQuery
     {
+        const string CONNECTION_STRING = "Data Source=ACE-DESKTOP\\MSSQLSERVER03;Integrated Security=False;User ID=AcePilot10;Password=Airplane10;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Database=CommandHandler";
+
         private ILog _log;
         private ISqlGenerator _sql;
 
@@ -24,7 +26,7 @@ namespace dev.Core.Sql
         {
             var result = new List<T>();
 
-            using (var connection = new SqlConnection(ConfigurationManager.AppSettings["Database"]))
+            using (var connection = new SqlConnection(CONNECTION_STRING))
             {
                 _log.LogTrace<SqlQuery>($"SELECT: {sql}. Parameters: {JsonConvert.SerializeObject(parameters)}");
 
@@ -45,7 +47,7 @@ namespace dev.Core.Sql
 
         public void Insert<T>(T obj) where T : class
         {
-            using (var connection = new SqlConnection(ConfigurationManager.AppSettings["Database"]))
+            using (var connection = new SqlConnection(CONNECTION_STRING))
             {
                 connection.Open();
                 connection.Insert(obj);
@@ -55,7 +57,7 @@ namespace dev.Core.Sql
 
         public void Update<T>(T obj) where T : class
         {
-            using (var connection = new SqlConnection(ConfigurationManager.AppSettings["Database"]))
+            using (var connection = new SqlConnection(CONNECTION_STRING))
             {
                 connection.Open();
                 connection.Update(obj);
@@ -83,7 +85,7 @@ namespace dev.Core.Sql
 
         public void Delete<T>(T obj) where T : class
         {
-            using (var connection = new SqlConnection(ConfigurationManager.AppSettings["Database"]))
+            using (var connection = new SqlConnection(CONNECTION_STRING))
             {
                 connection.Open();
                 connection.Delete(obj);
@@ -93,7 +95,7 @@ namespace dev.Core.Sql
 
         public void Execute(string sql, object parameters)
         {
-            using (var connection = new SqlConnection(ConfigurationManager.AppSettings["Database"]))
+            using (var connection = new SqlConnection(CONNECTION_STRING))
             {
                 _log.LogTrace<SqlQuery>($"EXECUTE: {sql}. Parameters: {JsonConvert.SerializeObject(parameters)}");
 

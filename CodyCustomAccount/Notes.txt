@@ -1,0 +1,11 @@
+﻿Notes:
+- SqlQuery will not work with integrated security
+- Remember to register NLog with dependency injection before SqlQuery
+
+
+Advice:
+- Why not use Entity Framework? Or give option to use EF?
+
+Info:
+- I changed up the code in SqlQuery so that instead of using AppConfig, it uses a hardcoded connection string. I did this because I am unfamiliar with AppConfig and didn't
+want to waste time. To be fixed in the future.
