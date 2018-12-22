@@ -2,6 +2,7 @@
 using Autofac.Integration.WebApi;
 using dev.Core.Commands;
 using dev.Core.IoC;
+using dev.Core.Logger;
 using dev.Core.Security;
 using dev.Core.Security.Interfaces;
 using dev.Core.Sql;
@@ -20,7 +21,7 @@ namespace dev.Api
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterType<Handler>().As<IHandler>();
+            builder.RegisterType<NLog>().As<ILog>();
             builder.RegisterType<SqlQuery>().As<IQuery>();
             builder.RegisterType<AESEncryptor>().Named<IStringEncryptor>(nameof(AESEncryptor));
             builder.RegisterType<Base64Encryptor>().Named<IStringEncryptor>(nameof(Base64Encryptor));
@@ -58,7 +59,7 @@ namespace dev.Api
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();
 
-            CompositionRoot.Wire(container);
+            ServiceLocator.SetLocator(new AutofacServiceLocator(container));
 
             //ConfigureAuth(app);
 

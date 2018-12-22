@@ -2,39 +2,33 @@
 using dev.Business.Validators;
 using dev.Core.Commands;
 using dev.Core.Entities;
-using dev.Core.IoC;
 using dev.Entities.Models;
-using System.Linq;
 using System.Web.Http;
 
 namespace dev.Api.Controllers
 {
     public class UserController : ApiController
     {
-        public UserController() { }
+        private IHandler _handler;
 
-        //[Authorize]
-        [HttpGet]
-        public string[] Echo()
+        public UserController(IHandler handler)
         {
-            var result = new Handler(ServiceLocator.Current)
-                .Add(new User() {
-                    LastName = "Smith"
-                })
-                .Validate<FirstNameNotNullOrEmpty>()
-                .Validate<EmailNotNullOrEmpty>()
-                .Invoke();
-
-            return result.Messages.ToArray();
+            _handler = handler;
         }
 
+        [Authorize]
+        [HttpGet]
+        public string Echo()
+        {
+            return System.DateTime.Now.ToShortDateString();
+        }
 
         [HttpPost]
         [AllowAnonymous]
         [Route("user/save")]
         public IResult Save([FromBody]User user)
         {
-            return new Handler(ServiceLocator.Current) 
+            return _handler
                 .Add(user)
                 .Validate<FirstNameNotNullOrEmpty>()
                 .Validate<EmailNotNullOrEmpty>()
@@ -53,7 +47,7 @@ namespace dev.Api.Controllers
         [Route("user/update")]
         public IResult Update([FromBody]User user)
         {
-            return new Handler(ServiceLocator.Current)
+            return _handler
                 .Add(user)
                 .Validate<FirstNameNotNullOrEmpty>()
                 .Validate<EmailNotNullOrEmpty>()

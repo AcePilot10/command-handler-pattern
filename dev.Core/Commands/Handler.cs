@@ -11,21 +11,20 @@ namespace dev.Core.Commands
     public class Handler : IHandler
     {
         private ILog _log;
+        private readonly IServiceLocator _serviceLocator;
 
         public List<IModel> Data { get; set; }
         public List<ICommand> Commands { get; set; }
-        public List<IValidation> Validators { get; set; } 
+        public List<IValidation> Validators { get; set; }
 
-        public Handler(ILog log)
+        public Handler(IServiceLocator locator)
         {
-            if (Data == null)
-                Data = new List<IModel>();
-            if (Commands == null)
-                Commands = new List<ICommand>();
-            if (Validators == null)
-                Validators = new List<IValidation>();
+            Data = new List<IModel>();
+            Commands = new List<ICommand>();
+            Validators = new List<IValidation>();
 
-            _log = log;
+            _serviceLocator = locator;
+            _log = _serviceLocator.Resolve<ILog>();
         }
 
         private IResult Validate()
@@ -36,9 +35,8 @@ namespace dev.Core.Commands
             {
                 if (validator.IsValid(Data))
                     continue;
-                result.Message = validator.Message();
+                result.AddMessage(validator.Message());
                 result.Success = false;
-                break;
             }
 
             return result;
@@ -72,7 +70,12 @@ namespace dev.Core.Commands
             {
                 _log.LogException<Handler>(ex);
 
-                return new Result() { Success = false, Message = $"Looks like there was a problem with your request." };
+                var result = new Result()
+                {
+                    Success = false
+                };
+                result.AddMessage($"Looks like there was a problem with your request.");
+                return result;
             }
             finally
             {
@@ -93,18 +96,18 @@ namespace dev.Core.Commands
 
         public IHandler Command<Command>() where Command : ICommand
         {
-            Commands.Add(CompositionRoot.Resolve<ICommand>(typeof(Command).Name));
+            Commands.Add(_serviceLocator.Resolve<ICommand>(typeof(Command).Name));
 
             return this;
         }
 
         public IHandler Validate<Validator>() where Validator : IValidation
         {
-            Validators.Add(CompositionRoot.Resolve<IValidation>(typeof(Validator).Name));
+            Validators.Add(_serviceLocator.Resolve<IValidation>(typeof(Validator).Name));
 
             return this;
         }
-        
+
         public IResult Invoke()
         {
             IResult result = new Result();
@@ -119,15 +122,6 @@ namespace dev.Core.Commands
                 return result;
 
             return result;
-        }
-
-        public IHandler Reset()
-        {
-            Data.Clear();
-            Commands.Clear();
-            Validators.Clear();
-
-            return this;
         }
     }
 }
