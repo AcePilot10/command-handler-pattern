@@ -1,0 +1,17 @@
+﻿Notes:
+- SqlQuery will not work with integrated security
+- Remember to register NLog with dependency injection before SqlQuery
+
+Advice:
+- Why not use Entity Framework? Or give option to use EF?
+
+Challenges:
+- I changed up the code in SqlQuery so that instead of using AppConfig, it uses a hardcoded connection string. I did this because I am unfamiliar with AppConfig and didn't
+want to waste time. To be fixed in the future.
+- It was a extremelly steep learning curve for me, personally. I think this is because I had never used Autofac or Owin.
+- To construct the new project, I had strayed off the path of using Owin like in your original projects. I used Microsoft's built in pipeline instead.
+- I learned how to use Autofac and was able to implement that in for dependency injection
+- Once I got over all the little roadblocks (like using SqlQuery to access the database, and learning the dependencies) the concept was straight forward and easy to use
+
+Overall, as I said before, once you get over the pretty steep learning curve, it is extremelly easy and efficient to use the Command Handler Pattern framework.
+I could definetly see myself using this framework in multiple different scenarios.
